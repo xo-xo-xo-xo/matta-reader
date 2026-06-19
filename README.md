@@ -6,7 +6,7 @@ a fork of [dark reader](https://github.com/darkreader/darkreader) that automatic
 
 ### matugen
 
-you need matugen installed and a matugen template that outputs a darkreader-compatible json. 
+you need matugen installed and a [matugen template](https://github.com/xo-xo-xo-xo/matta-reader/blob/main/templates/darkreader.json) that outputs a darkreader-compatible json. 
 
 add this to your matugen config (`~/.config/matugen/config.toml`):
 
@@ -22,7 +22,7 @@ run `matugen image <your-wallpaper>` and it'll generate the json file the extens
 
 the extension can't read local files directly (firefox sandbox), so there's a small python script that acts as a bridge. firefox spawns it on demand when you toggle "matugen sync" on.
 
-save ```darkreader-matugen-host``` to ```~/local.bin```
+save [darkreader-matugen-host](https://github.com/xo-xo-xo-xo/matta-reader/blob/main/scripts/darkreader-matugen-host) to ```~/local.bin```
 
 make it executable:
 
