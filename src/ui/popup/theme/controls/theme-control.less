@@ -1,0 +1,67 @@
+.theme-control {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: @size-control-inner;
+    width: 100%;
+
+    &__label {
+        font-size: @size-text-normal;
+        line-height: @size-text-normal;
+        text-align: left;
+        -moz-user-select: none;
+        user-select: none;
+        width: 50%;
+    }
+}
+
+.export-theme-button {
+    background-color: @color-control-active;
+    border: none;
+    height: 1.25rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.625rem;
+    width: 100%;
+}
+
+.matugen-toggle {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 0.375rem;
+    width: 50%;
+
+    &__switch {
+        background-color: @color-control-hover;
+        border-radius: 0.5rem;
+        height: 1rem;
+        position: relative;
+        transition: background-color 0.15s;
+        width: 2rem;
+
+        &--on {
+            background-color: @color-control-active;
+        }
+    }
+
+    &__knob {
+        background-color: @color-control-fore;
+        border-radius: 50%;
+        height: 0.75rem;
+        left: 0.125rem;
+        position: absolute;
+        top: 0.125rem;
+        transition: left 0.15s;
+    }
+
+    &__switch--on &__knob {
+        left: 1.125rem;
+    }
+
+    &__label {
+        font-size: @size-text-normal;
+        -moz-user-select: none;
+        user-select: none;
+    }
+}
